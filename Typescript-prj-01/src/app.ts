@@ -67,7 +67,7 @@ class ProjectInput {
 		event.preventDefault();
 		const userInput = this.gatherUserInput();
 		if (Array.isArray(userInput)) {
-			const [title, desc, people] = userInput;
+			const [title, desc, people] = userInput; //tuple destructuring
 			console.log(title, desc, people);
 		}
 		this.clearInputs();
